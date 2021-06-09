@@ -38,7 +38,7 @@ namespace Fibonnacci {
                 }
                 Console.Write("{0}", Environment.NewLine);
                 do {
-                    Console.Write("Nocheinmal?(J)a/(N)ein:", Environment.NewLine);
+                    Console.Write("Nocheinmal?(J)a/(N)ein:");
                     eingabe = Console.ReadLine();
                 } while (!String.Equals(eingabe.ToUpper(), "J") && !String.Equals(eingabe.ToUpper(), "N"));
                 if (String.Equals(eingabe.ToUpper(), "J")) {
