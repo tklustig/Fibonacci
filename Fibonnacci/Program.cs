@@ -10,7 +10,7 @@ namespace Fibonnacci {
             Console.ForegroundColor = ConsoleColor.White;
             do {
                 try {
-                    Console.Write(Environment.NewLine + "Bitte geben sie die Anzahl an Fibonnacii-Folgen ein:");
+                    Console.Write("{{0}Bitte geben sie die Anzahl an Fibonnacci-Folgen ein:", Environment.NewLine);
                     k = Convert.ToInt16(Console.ReadLine());
                 } catch (FormatException er) {
                     Console.WriteLine(er.Message);
@@ -22,7 +22,7 @@ namespace Fibonnacci {
                 } else if (k == 1)
                     Console.Write("Die erste Fibonnaci-Folge lautet:1");
                 else if (k == 2)
-                    Console.Write("Die ersten beiden Fibonnaci-Folgen lauten:1 und 2");
+                    Console.Write("Die ersten beiden Fibonnacci-Folgen lauten:1 und 2");
                 else {
                     Console.Write("Die ersten {0} Fibonacci-Folgen lauten:{1}", k, Environment.NewLine);
                     Console.BackgroundColor = ConsoleColor.Blue;
