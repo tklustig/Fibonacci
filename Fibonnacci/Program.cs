@@ -10,7 +10,7 @@ namespace Fibonnacci {
             Console.ForegroundColor = ConsoleColor.White;
             do {
                 try {
-                    Console.Write("{{0}Bitte geben sie die Anzahl an Fibonnacci-Folgen ein:", Environment.NewLine);
+                    Console.Write("{0}Bitte geben sie die Anzahl an Fibonnacci-Folgen ein:", Environment.NewLine);
                     k = Convert.ToInt16(Console.ReadLine());
                 } catch (FormatException er) {
                     Console.WriteLine(er.Message);
