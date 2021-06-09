@@ -3,7 +3,7 @@
 namespace Fibonnacci {
     class Program {
         private static void Main() {
-            bool wiederholung = false; ;
+            bool wiederholung = false;
             ulong first = 0, second = 1, next; //deckt Zahlen von 0 bis 1,8*10^19 ab
             short k = 0;
             string eingabe;
