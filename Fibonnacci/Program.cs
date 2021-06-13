@@ -22,12 +22,13 @@ namespace Fibonnacci {
                 } else if (k == 1)
                     Console.Write("Die erste Fibonnaci-Folge lautet:1");
                 else if (k == 2)
-                    Console.Write("Die ersten beiden Fibonnacci-Folgen lauten:1 und 2");
+                    Console.Write("Die ersten beiden Fibonnacci-Folgen lauten:1 und 1");
                 else {
                     Console.Write("Die ersten {0} Fibonacci-Folgen lauten:{1}", k, Environment.NewLine);
                     Console.BackgroundColor = ConsoleColor.Blue;
                     //Algorithmus zur Bestimmung aller Fibonacci-Zahlen von 1 bis k 
-                    for (int j = 1; j <= k; j++) {
+                    for (int j = 2; j <= k; j++) {
+                        if (j == 2) Console.Write("1,");
                         next = first + second;
                         first = second;
                         second = next;
